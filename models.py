@@ -13,7 +13,7 @@ class Audio_Engineer(Base):
    updated_at = Column(DateTime(), onupdate=func.now())
 
    def __repr__(self):
-       return f'Shop(id={self.id}, name="{self.name}")'
+       return f'Audio_Engineer(id={self.id}, name="{self.name}")'
 
 if   __name__ == '__main__':
 		engine = create_engine('sqlite:///audio_engineers.db')
